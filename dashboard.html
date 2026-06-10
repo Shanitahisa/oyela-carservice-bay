@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAS Bay Customer Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+        <img src="logo.png" alt="" width="200">
+        </div>
+        
+
+        <nav>
+            <a href="#" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+            <a href="#"><i class="fa-solid fa-car"></i> My Vehicles</a>
+            <a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+            <a href="#"><i class="fa-solid fa-receipt"></i> Invoices</a>
+            <a href="#"><i class="fa-solid fa-money-bill"></i> Buy Spare</a>
+            <a href="#"><i class="fa-solid fa-calendar-check"></i> Book Service</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+            <div>
+                <h1>Customer Dashboard</h1>
+                <p>Welcome back, Shanitah!. Track your car service records here.</p>
+            </div>
+
+            <div id="cart">
+               <a href=""> <i class="fa-solid fa-cart-shopping"></i>
+                <span>View cart</span>
+               </a>
+
+            </div>
+
+            <div class="profile">
+                <a href="">
+                <i class="fa-solid fa-user"></i>
+                <span>Shanitah</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Cards -->
+        <section class="cards">
+            <div class="card">
+                <i class="fa-solid fa-car-side"></i>
+                <h3>2</h3>
+                <p>Registered Vehicles</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>5</h3>
+                <p>Booked parts</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-gauge"></i>
+                <h3>2</h3>
+                <p>booked servies</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-days"></i>
+                <h3>12 Jun</h3>
+                <p>Toyota Ramos(UA 490AD) <br> Next service</p>
+            </div>
+        </section>
+
+        <!-- Current Service -->
+        <section class="content-grid">
+
+            <div class="panel">
+                <h2>Current Service Status</h2>
+
+                <div class="service-status">
+                    <div>
+                        <h3>Toyota Premio - UBD 456A</h3>
+                        <p>Engine oil change, oil filter, wheel alignment</p>
+                    </div>
+
+                    <span class="badge progress">In Progress</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <p class="small-text">Technician: John Mukasa | Bay No: 03</p>
+            </div>
+
+            <!-- Service Charges -->
+            <div class="panel">
+                <h2>Service Price Guide</h2>
+
+                <ul class="price-list">
+                    <li><span>Labour Charge</span><strong>UGX 20,000</strong></li>
+                    <li><span>Wheel Alignment</span><strong>UGX 30,000</strong></li>
+                    <li><span>Wheel Balance</span><strong>UGX 20,000</strong></li>
+                    <li><span>Engine Oil</span><strong>UGX 79,000 - 200,000</strong></li>
+                    <li><span>Oil Filters</span><strong>UGX 15,000 - 20,000</strong></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Service History -->
+        <section class="panel">
+            <h2>Recent Service History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Vehicle</th>
+                        <th>Service Done</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>08 Jun 2026</td>
+                        <td>UBD 456A</td>
+                        <td>Oil Change, Filter, Greasing</td>
+                        <td>UGX 135,000</td>
+                        <td><span class="badge done">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>21 May 2026</td>
+                        <td>UAZ 223Q</td>
+                        <td>Wheel Alignment</td>
+                        <td>UGX 30,000</td>
+                        <td><span class="badge done">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>15 Apr 2026</td>
+                        <td>UBD 456A</td>
+                        <td>Brake Pads Change</td>
+                        <td>UGX 95,000</td>
+                        <td><span class="badge done">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+   
+</div>
+ <footer class="footer">
+        <div class="logo">
+            <img src="logo.png" alt="">
+
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+            <a href="#"><i class="fa-solid fa-car"></i> My Vehicles</a>
+            <a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+            <a href="#"><i class="fa-solid fa-receipt"></i> Invoices</a>
+            <a href="#"><i class="fa-solid fa-money-bill"></i> Buy Spare</a>
+            <a href="#"><i class="fa-solid fa-calendar-check"></i> Book Service</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </div>
+        <div class="featured">
+            <h2>10 Point Check Car Service </h2>
+            <ul>
+                <li>Engine oil change</li>
+                <li>Oil filter replacement</li>
+                <li>Gearbox oil change</li>
+                <li>Brake fluid replacement</li>
+                <li>Brake pad replacement</li>
+                <li>Greasing</li>
+                <li>Wheel alignment</li>
+                <li>Wheel balancing</li>
+                <li>Minor mechanical repairs</li>
+                <li>Sale of spare parts and lubricants</li>
+
+ 
+            </ul>
+            <span>At only 200,000UGX</span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
