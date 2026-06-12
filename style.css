@@ -310,3 +310,33 @@ td {
  
 }
 
+/* login page */
+.log-in{
+    background-color: #10283a;
+    border-radius: 3px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 700px;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form-logo{
+    justify-self: center;
+
+}
+.form-text, .checks{
+    color: white;
+}
+.signin{
+    display: flex;
+    gap: 10px;
+  
+    justify-content: center;
+
+}
+
+/* login page  ends here*/
+
